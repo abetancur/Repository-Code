@@ -1,0 +1,97 @@
+<!DOCTYPE html><html>
+<head>
+<title>Menú Plegable</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<style>
+  .panel-group {
+    width: 17%;
+    margin-left: 10px;
+    margin-top: 20px;
+  }
+  .panel-default>.panel-heading {
+    color: white;
+    background-color: black;
+    border-color: #ddd;
+  }
+</style>
+</head>
+<body>
+  <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+    <div class="panel panel-default">
+      <div class="panel-heading" role="tab" id="headingOne">
+        <h4 class="panel-title">
+          <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+            Opción #1
+          </a>
+        </h4>
+      </div>
+      <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+        <div class="panel-body">
+          <div class="dropdown">
+            <ul class="nav nav-stacked">
+              <li role="presentation" class="dropdown">
+                <a id="dLabel" href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                  Music
+                  <span class="caret"></span>
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="dLabel">
+                  <li><a href="#"><font><font>Welcome</font></font></a></li>
+                  <li><a href="#"><font><font>Featured</font></font></a></li>
+                  <li><a href="#"><font><font>People</font></font></a></li>
+                  <li><a href="#"><font><font>Music</font></font></a></li>
+                  <li><a href="#"><font><font>Mixes</font></font></a></li>
+                  <li><a href="#"><font><font>Videos</font></font></a></li>
+                  <li><a href="#"><font><font>Radio</font></font></a></li>
+                </ul>
+              </li>
+              <li role="presentation" class="dropdown">
+                <a id="dLabel2" href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                  Videos
+                  <span class="caret"></span>
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="dLabel2">
+                  <li><a href="#"><font><font>Videos</font></font></a></li>
+                  <li><a href="#"><font><font>Radio</font></font></a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="panel panel-default">
+      <div class="panel-heading" role="tab" id="headingTwo">
+        <h4 class="panel-title">
+          <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+            Opción #2
+          </a>
+        </h4>
+      </div>
+      <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+        <div class="panel-body">
+          Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. Aenean dignissim pellentesque felis.
+          Morbi in sem quis dui placerat ornare. Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam. Sed arcu. Cras consequat.
+        </div>
+      </div>
+    </div>
+    <div class="panel panel-default">
+      <div class="panel-heading" role="tab" id="headingThree">
+        <h4 class="panel-title">
+          <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+            Opción #3
+          </a>
+        </h4>
+      </div>
+      <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+        <div class="panel-body">
+          Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede.
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
